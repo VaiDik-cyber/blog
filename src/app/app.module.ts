@@ -7,12 +7,20 @@ import { UserListComponent } from './user-list/user-list.component';
 
 import { UserAuthModule } from './user-auth/user-auth.module';
 import { CounterComponent } from './counter/counter.component';
+import { InterPolationComponent } from './inter-polation/inter-polation.component';
+import { IfElseComponent } from './if-else/if-else.component';
+import { LoopComponent } from './loop/loop.component';
+import { StyleBindingComponent } from './style-binding/style-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
     CounterComponent,
+    InterPolationComponent,
+    IfElseComponent,
+    LoopComponent,
+    StyleBindingComponent,
 
   ],
   imports: [

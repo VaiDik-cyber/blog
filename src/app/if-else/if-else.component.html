@@ -1,0 +1,33 @@
+<h1>{{ title }}</h1>
+
+<!-- if/else condition -->
+
+<h2 *ngIf="show; then ifBlock; else elseBlock"></h2>
+<ng-template #ifBlock>If condition</ng-template>
+<ng-template #elseBlock>Else condition</ng-template>
+
+<!-- ###################################################################### -->
+
+<!-- else-if/ multiple condition -->
+
+<ng-template [ngIf]="color === 'red'">
+  <h1 style="color: red">Red Color</h1>
+</ng-template>
+<ng-template [ngIf]="color === 'green'">
+  <h1 style="color: green">Green Color</h1>
+</ng-template>
+<ng-template [ngIf]="color === 'blue'">
+  <h1 style="color: blue">Blue Color</h1>
+</ng-template>
+<!-- if we have 3-4 condition than use else-if, otherwise use switch case -->
+
+<!-- ###################################################################### -->
+
+<!-- switch-case -->
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'red'" style="color: red">Red color</h1>
+  <h1 *ngSwitchCase="'green'" style="color: green">Green color</h1>
+  <h1 *ngSwitchCase="'blue'" style="color: blue">Blue color</h1>
+  <h1 *ngSwitchCase="'yellow'" style="color: yellow">Yellow color</h1>
+  <h1 *ngSwitchDefault>Unknown color</h1>
+</div>

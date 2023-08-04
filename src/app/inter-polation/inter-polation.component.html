@@ -1,0 +1,16 @@
+<!-- interPolation -->
+<div>
+  <label for="name">Input 1</label>
+  <br />
+  <input type="text" value="{{ name }}" disabled="{{ disabled }}" />
+</div>
+<br />
+
+<!-- PropertyBinding -->
+<div>
+  <label for="name">Input 2</label>
+  <br />
+  <input type="text" [value]="name" [disabled]="disabled" />
+</div>
+
+<!-- PropertyBinding is better than interPolation bcz we can use boolean value also in PropertyBinding.In interPolation only string and numbers are supported. -->

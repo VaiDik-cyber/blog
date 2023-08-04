@@ -1,0 +1,18 @@
+<!-- For loop -->
+<div *ngFor="let user of users">
+  <h3>{{ user }}</h3>
+</div>
+
+<!-- multiple For-loop / Nested loop -->
+
+<div>
+  <ul *ngFor="let details of userDetails">
+    <li>{{ details.name }}</li>
+    <li>{{ details.email }}</li>
+    <li>{{ details.mobile }}</li>
+
+    <ul *ngFor="let accountsDetails of details.accounts">
+      <li>{{ accountsDetails }}</li>
+    </ul>
+  </ul>
+</div>
