@@ -11,6 +11,7 @@ import { InterPolationComponent } from './inter-polation/inter-polation.componen
 import { IfElseComponent } from './if-else/if-else.component';
 import { LoopComponent } from './loop/loop.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
     IfElseComponent,
     LoopComponent,
     StyleBindingComponent,
+    HeaderComponent,
 
   ],
   imports: [
