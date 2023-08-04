@@ -8,10 +8,20 @@ import { Component } from '@angular/core';
 export class StyleBindingComponent {
   title='Style-Binding';
   color = 'red';
-  bgColor = 'orange'
+  bgColor = 'orange';
+  clicked = false;
 
-  updateColor(){
-    this.color ='skyblue' ;
-    this.bgColor =  'blue'
-  }
+  // updateColor(){
+    
+  //   // if(this.clicked===true){
+  //   //   this.color = 'red';
+  //   //   this.bgColor = 'orange';
+  //   // }
+  //   // else{
+  //   //   this.color = 'skyblue';
+  //   //   this.bgColor = 'blue';
+  //   // }
+  //   // this.clicked = !this.clicked;
+
+  // }
 }

@@ -1,5 +1,10 @@
 <!-- style-Binding -->
 
-<h1 [style.color]="color" [style.backgroundColor]="bgColor">{{ title }}</h1>
-<button (click)="updateColor()">Update Color</button>
+<h1
+  [style.color]="clicked ? 'blue' : 'red'"
+  [style.backgroundColor]="clicked ? 'orange' : 'skyblue'"
+>
+  {{ title }}
+</h1>
+<button (click)="clicked = !clicked">Update Color</button>
 <!-- we can give dynamic style through style-binding -->
